@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #1A237E;
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .item {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 10px;
+            background-color: #2196F3;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .item h2{
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        .item p{
+            line-height: 1.5;
+        }
+        .item svg {
+            display: block;
+            margin: 2rem auto;
+            width: 80px;
+            height: 80px;
+            fill: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <h2>Junte-se a nós e explore!</h2>
+        </div>
+        <div class="item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 18H8v-2h8v2zm0-4H8v-2h8v2zm0-4H8v-2h8v2z"/></svg>
+            <h2>Downloads de Certificados!</h2>
+        </div>
+        <div class="item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 18H8v-2h8v2zm0-4H8v-2h8v2zm0-4H8v-2h8v2z"/></svg>
+            <h2>Curriculos totalmente gratuitos!</h2>
+        </div>
+        <div class="item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <h2>Cursos Gratuitos e eficazes!</h2>
+        </div>
+    </div>
+</body>
+</html>
