@@ -1,0 +1,239 @@
+/* Fonte Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Fonte Kiwi Maru */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kiwi+Maru&display=swap');
+/* Fonte Init */
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kiwi+Maru&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(imgs/background.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+    background-color: white;
+    
+}
+header img{
+    padding-top: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #044F86;
+    
+}
+
+
+nav .containerbtn{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.buttons{
+    align-items: center;
+    right: 20%;
+    left: 90%;
+    width: 100px;
+    /* border: 1px solid white;
+    border-radius: 3px; */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40%;
+    padding-right: 40%;
+}
+.buttons a{
+    background-color: transparent;
+}
+.buttons a:hover{
+    background-color: #428296;
+}
+
+main{
+    width: 100%;
+    height: 60%;
+    background-color: white;
+    font-family: "Kiwi Maru", sans-serif;
+}
+
+main img{
+    width: 100%;
+    
+    
+}
+
+main h1{
+    padding-top: 70px;
+    padding-left: 45px;
+    font-size: 230%;
+}
+
+main h2{
+    color: black;
+    display: flex;
+    justify-content: first baseline;
+    padding-left: 45px;
+    padding-top: 50px;
+    font-size: 180%;
+    padding-bottom: 1px;
+}
+
+main h3{
+    color: #428296;
+    padding-left: 45px;
+    padding-top: 2px;
+    font-size: 100%;
+}
+
+ 
+
+.headerCards h1,h2{
+    text-align: center;
+    color: white;
+    margin: 20px 0px;
+}
+
+.containerCards{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    width: 250px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 30px;
+    display: inline-block;
+    background-color: rgb(24, 104, 131);
+}
+.card img{
+    height: 120px;
+    width: 249px;
+    object-fit: cover;
+    border-radius: 30px 30px 0 0;
+}
+
+
+.card h1{
+    color: white;
+    height: 5px;
+    width: 40px;
+    font-size: 100%;
+    text-align:start;
+    font-family: "Inika", sans-serif;
+}
+.card h2{
+    color: white;
+    margin-top: 0%;
+    height: 5px;
+    width: 40px;
+    font-size: 80%;
+    text-align: center;
+    font-family: "Inika", sans-serif;
+}
+
+.card div p{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    color: white;
+    font-size: 80%;
+    height: 70px;
+    width: 250px;
+    font-family: "Inika", sans-serif;
+}
+.container-chamada{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.container-chamada h1{
+    font-family: "Kiwi Maru", sans-serif;
+    color: white;
+    margin: 0 142px;
+    font-size: 50px;
+}
+
+.container-grid{
+    width: 50%;
+    height: 300px;
+    /* border: 1px solid black; */
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.container-cardIcon{
+    width: 200px;
+    height: 100px;
+    /* border: 1px solid black; */
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+}
+.container-cardIcon img{
+    position: absolute;
+    width: 125px;
+    height: 75px;
+    left: 40px;
+}
+.container-cardIcon p{
+    position: absolute;
+    font-family: "Kiwi Maru", sans-serif;
+    color: white;
+    text-align: center;
+    top: 85px;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+}
+footer h1{
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer p{
+    margin:20px 0px 10px 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    
+}
+footer p img{
+    width: 70px;
+    height: 50px;
+}
