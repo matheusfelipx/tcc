@@ -1,16 +1,165 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursos</title>
-    <link rel="stylesheet" href="styleCursos.css">
+    <link rel="stylesheet" href="css/aplicacao.css">
+    <style>
+        main img {
+            width: 100%;
+
+
+        }
+
+        main h1 {
+            padding-top: 70px;
+            padding-left: 45px;
+            font-size: 230%;
+        }
+
+        main h2 {
+            color: black;
+            display: flex;
+            justify-content: first baseline;
+            padding-left: 45px;
+            padding-top: 50px;
+            font-size: 180%;
+            padding-bottom: 1px;
+        }
+
+        main h3 {
+            color: #428296;
+            padding-left: 45px;
+            padding-top: 2px;
+            font-size: 100%;
+        }
+
+
+
+        .headerCards h1,
+        h2 {
+            text-align: center;
+            color: white;
+            margin: 20px 0px;
+        }
+
+        .containerCards {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .card {
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 30px;
+            display: inline-block;
+            background-color: rgb(24, 104, 131);
+        }
+
+        .card img {
+            height: 120px;
+            width: 249px;
+            object-fit: cover;
+            border-radius: 30px 30px 0 0;
+        }
+
+
+        .card h1 {
+            color: white;
+            height: 5px;
+            width: 40px;
+            font-size: 100%;
+            text-align: start;
+            font-family: "Inika", sans-serif;
+        }
+
+        .card h2 {
+            color: white;
+            margin-top: 0%;
+            height: 5px;
+            width: 40px;
+            font-size: 80%;
+            text-align: center;
+            font-family: "Inika", sans-serif;
+        }
+
+        .card div p {
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 2px;
+            color: white;
+            font-size: 80%;
+            height: 70px;
+            width: 250px;
+            font-family: "Inika", sans-serif;
+        }
+
+        .container-chamada {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* border: 1px solid black; */
+        }
+
+        .container-chamada h1 {
+            font-family: "Kiwi Maru", sans-serif;
+            color: white;
+            margin: 0 142px;
+            font-size: 50px;
+        }
+
+        .container-grid {
+            width: 50%;
+            height: 300px;
+            /* border: 1px solid black; */
+            display: grid;
+            justify-content: space-evenly;
+            align-items: center;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+
+        .container-cardIcon {
+            width: 200px;
+            height: 100px;
+            /* border: 1px solid black; */
+            position: relative;
+            /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+        }
+
+        .container-cardIcon img {
+            position: absolute;
+            width: 125px;
+            height: 75px;
+            left: 40px;
+        }
+
+        .container-cardIcon p {
+            position: absolute;
+            font-family: "Kiwi Maru", sans-serif;
+            color: white;
+            text-align: center;
+            top: 85px;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <img src="imgs/logoCFP.jpeg" alt="logoCFP">
     </header>
-    <nav><div class="containerbtn">
+    <nav>
+        <div class="containerbtn">
             <a class="buttons" href="home.html" target="_self">Home</a>
             <a class="buttons" href="cursos.html" target="_self">Cursos</a>
             <a class="buttons" href="certificado.html" target="_self">Certificados</a>
@@ -23,7 +172,7 @@
         <h2>Administração</h2>
         <h3>Previsão de termino: 06/11/2024</h3>
 
-        
+
 
         <h2>Aprendendo Python</h2>
         <h3>Previsão de termino: 06/11/2024</h3>
@@ -35,7 +184,7 @@
                 <img src="imgs/cod.png" alt="">
                 <div>
                     <p>Aprendendo Python</p>
-                    <p>Aprenda de forma divertida e didatica  <br>
+                    <p>Aprenda de forma divertida e didatica <br>
                         a linguagem mais facil na programação!</p>
                     <p>Periodo: 2 anos <br>Inscreva-se!</p>
                 </div>
@@ -44,7 +193,7 @@
                 <img src="imgs/cod.png" alt="">
                 <div>
                     <p>Aprendendo Python</p>
-                    <p>Aprenda de forma divertida e didatica  <br>
+                    <p>Aprenda de forma divertida e didatica <br>
                         a linguagem mais facil na programação!</p>
                     <p>Periodo: 2 anos <br>Inscreva-se!</p>
                 </div>
@@ -53,7 +202,7 @@
                 <img src="imgs/cod.png" alt="">
                 <div>
                     <p>Aprendendo Python</p>
-                    <p>Aprenda de forma divertida e didatica  <br>
+                    <p>Aprenda de forma divertida e didatica <br>
                         a linguagem mais facil na programação!</p>
                     <p>Periodo: 2 anos <br>Inscreva-se!</p>
                 </div>
@@ -64,7 +213,7 @@
                 <img src="imgs/cod.png" alt="">
                 <div>
                     <p>Aprendendo Python</p>
-                    <p>Aprenda de forma divertida e didatica  <br>
+                    <p>Aprenda de forma divertida e didatica <br>
                         a linguagem mais facil na programação!</p>
                     <p>Periodo: 2 anos <br>Inscreva-se!</p>
                 </div>
@@ -73,7 +222,7 @@
                 <img src="imgs/cod.png" alt="">
                 <div>
                     <p>Aprendendo Python</p>
-                    <p>Aprenda de forma divertida e didatica  <br>
+                    <p>Aprenda de forma divertida e didatica <br>
                         a linguagem mais facil na programação!</p>
                     <p>Periodo: 2 anos <br>Inscreva-se!</p>
                 </div>
@@ -82,13 +231,13 @@
                 <img src="imgs/cod.png" alt="">
                 <div>
                     <p>Aprendendo Python</p>
-                    <p>Aprenda de forma divertida e didatica  <br>
+                    <p>Aprenda de forma divertida e didatica <br>
                         a linguagem mais facil na programação!</p>
                     <p>Periodo: 2 anos <br>Inscreva-se!</p>
                 </div>
             </div>
         </div>
-        
+
     </main>
     <footer>
         <h1>Entre em contato conosco!</h1>
@@ -97,4 +246,5 @@
         <p><img src="imgs/Telefone-icon.png" alt="Whatsapp-icon"> <span>3322-6789</span></p>
     </footer>
 </body>
+
 </html>

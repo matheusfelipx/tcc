@@ -1,0 +1,94 @@
+/* Fonte Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Fonte Kiwi Maru */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kiwi+Maru&display=swap');
+/* Fonte Init */
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kiwi+Maru&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(imgs/background.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+    background-color: white;
+    
+}
+header img{
+    object-fit: cover;
+    object-position: center;
+    padding-top: 10px;
+    margin-right: 10px;
+}
+header h1 {
+    font-size: 22px;
+    padding-top: 24px;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #044F86;
+    
+}
+
+
+.containerbtn{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.buttons{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.buttons:hover{
+    text-decoration: underline;
+}
+
+main{
+    width: 100%;
+    height: 60%;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+}
+footer h1{
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer p{
+    margin:20px 0px 10px 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    
+}
+footer p img{
+    width: 70px;
+    height: 50px;
+}
