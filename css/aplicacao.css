@@ -44,17 +44,18 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #044F86;
-    
+    background-image: linear-gradient(90deg, rgb(7, 14, 122), #000000);
 }
-
-
+nav img{
+    height: 40px;
+}
 .containerbtn{
     width: 100%;
     height: 60px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 20px;
 }
 .buttons{
     color: white;
@@ -73,16 +74,16 @@ main{
 
 footer{
     width: 100%;
-    height: 300px;
+    height: 250px;
     background-color: black;
 }
 footer h1{
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 footer p{
-    margin:20px 0px 10px 60px;
+    margin: 0px 0px 15px 60px;
     color: white;
     display: flex;
     align-items: center;
