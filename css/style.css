@@ -17,6 +17,7 @@ body{
     background-size: cover;
     font-family: "Inter", sans-serif;
     font-weight: 600;
+    overflow-x: hidden;
 }
 
 header{
@@ -46,8 +47,8 @@ nav{
     width: 100%;
     height: 60px;
     display: flex;
-    justify-content: end;
-    align-items: center;
+    justify-content: end; 
+    align-items: center; 
     background-color: #044F86;
     
 }
@@ -75,8 +76,6 @@ nav .containerbtn{
 
 }
 .buttons{
-    right: 20%;
-    left: 90%;
     width: 100px;
     border-top: 1px solid #428296;
     border-left: 1px solid #428296;
@@ -158,8 +157,9 @@ main img{
 }
 
 .container-grid{
-    width: 50%;
+    width: 40%;
     height: 300px;
+    margin-right: 10%;
     /* border: 1px solid black; */
     display: grid;
     justify-content: space-evenly;
@@ -169,26 +169,24 @@ main img{
 }
 
 .container-cardIcon{
-    width: 200px;
-    height: 100px;
-    /* border: 1px solid black; */
-    position: relative;
+    width: 100%;
+    height: 100%;
     /* display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-direction: column; */
+    align-content: center;
+    flex-wrap: wrap; */
 }
 .container-cardIcon img{
-    position: absolute;
     width: 125px;
     height: 75px;
-    left: 40px;
+    margin: 0 auto;
+    display: block;
 }
 .container-cardIcon p{
-    position: absolute;
     font-family: "Kiwi Maru", sans-serif;
     color: white;
     text-align: center;
-    top: 85px;
 }
 footer{
     width: 100%;
@@ -212,4 +210,120 @@ footer p{
 footer p img{
     width: 67px;
     height: 40px;
+}
+@media (max-width:499px){
+    nav{
+        width: 100%;
+    }
+    nav .containerlinks{
+        width: 50%;
+        margin-right: 5px;
+    }
+    .linha{
+        height: 35px;
+    }
+    nav .containerbtn{
+        width: 50%;
+    }
+    .containerCards{
+        width: 100%;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        gap: 50px;
+    }
+    .card{
+        scroll-snap-align: start;
+    }
+    .container-chamada{
+        flex-direction: column;
+        height: 750px;
+        justify-content: space-around;
+    }
+    .container-chamada h1{
+        width: 100%;
+        font-size: 70px;
+        text-align: center;
+    }
+    .container-grid{
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media(min-width:500px) and (max-width: 768px) {
+    nav{
+        width: 100%;
+    }
+    nav .containerlinks{
+        width: 60%;
+        margin-right: 15px;
+    }
+    .linha{
+        height: 35px;
+    }
+    nav .containerbtn{
+        width: 40%;
+        justify-content: space-evenly;
+    }
+    .containerCards{
+        width: 100%;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        gap: 50px;
+    }
+    .card{
+        scroll-snap-align: start;
+    }
+    .container-chamada{
+        flex-direction: column;
+        height: 750px;
+        justify-content: space-around;
+    }
+    .container-chamada h1{
+        width: 100%;
+        font-size: 70px;
+        text-align: center;
+    }
+    .container-grid{
+        width: 100%;
+        margin-right: 0;
+    }
+}
+@media(min-width:769px) and (max-width: 992px) {
+    nav{
+        width: 100%;
+    }
+    nav .containerlinks{
+        width: 70%;
+        margin-right: 15px;
+    }
+    .linha{
+        height: 35px;
+    }
+    nav .containerbtn{
+        width: 30%;
+        justify-content: space-evenly;
+    }
+    .containerCards{
+        width: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 50px;
+    }
+    .card{
+        scroll-snap-align: start;
+    }
+    .container-chamada{
+        /* height: 650px; */
+        justify-content: space-around;
+    }
+    .container-chamada h1{
+        width: 80%;
+        font-size: 50px;
+        text-align: center;
+    }
+    .container-grid{
+        width: 120%;
+        
+    }
 }
