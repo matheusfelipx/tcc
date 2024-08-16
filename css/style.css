@@ -27,8 +27,6 @@ header{
     top: 0;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    /* border: 1px solid black; */
     background-color: white;
     
 }
@@ -53,7 +51,7 @@ nav{
     
 }
 nav .containerlinks{
-    width: 80%;
+    width: auto;
     display: flex;
     justify-content: end;
     margin-right: 20px;
@@ -70,10 +68,8 @@ nav .linha{
 }
 
 nav .containerbtn{
-    width: 17%;
+    width: auto;
     display: flex;
-    justify-content: space-around;
-
 }
 .buttons{
     width: 100px;
@@ -87,6 +83,7 @@ nav .containerbtn{
     text-decoration: none;
     padding-top: 5px;
     padding-bottom: 5px;
+    margin: 0 20px 0 20px;
 }
 
 .buttons:hover{
@@ -119,13 +116,12 @@ main img{
 .card{
     width: 250px;
     height: 300px;
-    /* border: 1px solid black; */
     border-radius: 30px;
     display: inline-block;
     background-color: #044F86;
 }
 .card img{
-    width: 249px;
+    width: 250px;
     object-fit: cover;
     border-radius: 30px 30px 0 0;
 }
@@ -146,7 +142,6 @@ main img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid black; */
 }
 
 .container-chamada h1{
@@ -160,7 +155,6 @@ main img{
     width: 40%;
     height: 300px;
     margin-right: 10%;
-    /* border: 1px solid black; */
     display: grid;
     justify-content: space-evenly;
     align-items: center;
@@ -171,11 +165,6 @@ main img{
 .container-cardIcon{
     width: 100%;
     height: 100%;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap; */
 }
 .container-cardIcon img{
     width: 125px;
@@ -216,14 +205,17 @@ footer p img{
         width: 100%;
     }
     nav .containerlinks{
-        width: 50%;
+        width: auto;
         margin-right: 5px;
     }
     .linha{
         height: 35px;
     }
     nav .containerbtn{
-        width: 50%;
+        width: auto;
+    }
+    .buttons{
+        margin: 0 10px;
     }
     .containerCards{
         width: 100%;
@@ -241,7 +233,7 @@ footer p img{
     }
     .container-chamada h1{
         width: 100%;
-        font-size: 70px;
+        font-size: 55px;
         text-align: center;
     }
     .container-grid{
@@ -255,15 +247,13 @@ footer p img{
         width: 100%;
     }
     nav .containerlinks{
-        width: 60%;
         margin-right: 15px;
     }
     .linha{
         height: 35px;
     }
-    nav .containerbtn{
-        width: 40%;
-        justify-content: space-evenly;
+    .buttons{
+        margin: 0 15px;
     }
     .containerCards{
         width: 100%;
@@ -293,16 +283,8 @@ footer p img{
     nav{
         width: 100%;
     }
-    nav .containerlinks{
-        width: 70%;
-        margin-right: 15px;
-    }
     .linha{
         height: 35px;
-    }
-    nav .containerbtn{
-        width: 30%;
-        justify-content: space-evenly;
     }
     .containerCards{
         width: 100%;
