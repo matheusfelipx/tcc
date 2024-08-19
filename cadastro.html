@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1>Cadastre-se</h1>
+            <label >Nome:</label> 
+            <input type="text" name="nomeusu" maxlength="100" size="100" placeholder="Insira seu nome completo" required >
+            <label >CPF:</label> 
+            <input type="text" name="cpfusu" maxlength="14" size="11" placeholder="___.___.___-__" required OnKeyPress="formatar('###.###.###-##',this)">
+            <label >Telefone:</label> 
+            <input type="text" name="telusu" maxlength="15" size="80" placeholder="(18) 99999-9999" required OnKeyPress="formatar('(##) #####-####',this)">
+            <label >Data de Nascimento:</label> 
+            <input type="date" name="rgusu" size="80" required>
+            <label>Título de Eleitor:</label>
+            <input type="text" name="titulousu" maxlength="12" size="14">
+            <label class="file" for="compro-resi">Anexe  seu comprovante de residência! <img src="imgs/Arquivo-icon.png" alt="icon"></label>
+            <input type="file" name="" id="compro-resi">
+            <label class="file" for="dc-matricula">Anexe sua declaração de tempo de matrícula! <img src="imgs/Arquivo-icon.png" alt="icon"></label>
+            <input type="file" name="" id="dc-matricula" required>
+            <label>E-mail:</label>
+            <input type="email" name="emailusu"  size="80" required>
+            <label>Senha:</label>
+            <input type="password" name="senhausu" size="80" placeholder="Mínimo de 8 caracteres. " required>
+            <label>Confirmar senha:</label>
+            <input type="password" name="confsenha"  size="80" required>
+            <input type="submit" value="Criar Conta">
+            <p>Já tem uma conta? <a href="login.html">Faça login!</a></p>
+        </form>
+    </div>
+    <script>
+        function formatar(mascara, documento) {
+            let i = documento.value.length;
+            let saida = '#';
+            let texto = mascara.substring(i);
+            while (texto.substring(0, 1) != saida && texto.length ) {
+            documento.value += texto.substring(0, 1);
+            i++;
+            texto = mascara.substring(i);
+            }
+        }
+    </script>
+</body>
+</html>
