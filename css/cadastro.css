@@ -1,0 +1,96 @@
+/* Fonte Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Fonte Kiwi Maru */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kiwi+Maru&display=swap');
+/* Fonte Init */
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kiwi+Maru&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    background-image: url(imgs/background.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+.container{
+    width: 600px;
+    height: 930px;
+    margin: 70px auto;
+    background-color: rgba(255, 255, 255, 0.308);
+    border-radius: 10px;
+}
+form{
+    width: 85%;
+    margin: 30px auto;
+    /* border: 1px solid black; */
+}
+form h1{
+    font-family: "Kiwi Maru", sans-serif;
+    color: white;
+    padding: 20px 0 10px 0;
+}
+label{
+    display: block;
+    margin: 10px 0 5px 0;
+}
+input{
+    width: 98%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 2%;
+}
+input[type="file"]{
+    display: none;
+}
+.file{
+    width: 98%;
+    height: 40px;
+    background-color: lightgray;
+    border-radius: 5px;
+    border: none;
+    padding-left: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 20px 0 20px 0;
+}
+.file:hover{
+    background-color: white;
+}
+.file img{
+    width: 17px;
+    margin-left: 5px;
+}
+input[type="submit"]{
+    margin: 30px 0 10px 0;
+    background-color: lightgray;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+input[type="submit"]:hover{
+    background-color: rgb(35, 222, 48);
+    color: white;
+}
+p{
+    text-align: center;
+    text-decoration: none;
+    margin: 8px 0;
+}
+p a{
+    text-decoration: none;
+    color: black;
+}
+p a:hover{
+    text-decoration: underline;
+}
