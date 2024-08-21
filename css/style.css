@@ -120,6 +120,9 @@ main img{
     display: inline-block;
     background-color: #044F86;
 }
+p{
+    color: white;
+}
 .card img{
     width: 250px;
     object-fit: cover;
