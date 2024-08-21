@@ -112,6 +112,7 @@ main img{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition: transform 0.3s ease;
 }
 .card{
     width: 250px;
@@ -119,6 +120,7 @@ main img{
     border-radius: 30px;
     display: inline-block;
     background-color: #044F86;
+
 }
 p{
     color: white;
