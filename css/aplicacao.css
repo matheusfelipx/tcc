@@ -93,3 +93,27 @@ footer p img{
     width: 70px;
     height: 50px;
 }
+
+@media(min-width:500px) and (max-width:769px){
+    .containerbtn{
+        font-size: 15px;
+        gap: 0;
+    }
+}
+@media (max-width:499px) {
+    .containerbtn{
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    nav img{
+        width: 40px;
+        height: 30px;
+    }
+    footer{
+        height: 300px;
+    }
+    footer p{
+        margin: 0px 0px 15px 30px;
+    }
+}
